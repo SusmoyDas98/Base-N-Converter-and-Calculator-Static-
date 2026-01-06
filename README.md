@@ -1,3 +1,5 @@
+#**The deployed version**: https://susmoydas98.github.io/Base-N-Converter-and-Calculator-Static-/
+
 # **Static Base-N Calculator and Converter**
 A simple static (no backend) Base-N Calculator and Converter that performs arithmetic operations and converts numbers between bases 2 to 36 with support for fractional parts.
 ## **The index.html page**
