@@ -12,12 +12,13 @@ body{
     height: 100vh;
     gap: 10px;
     background-color: white;
+    
 }
 
 .header{
      background-color: rgb(14, 82, 138);
 
-    height:100px;
+    min-height:100px;
     width: 100vw;
     padding-left: 100px;
     display: flex;
@@ -30,6 +31,7 @@ body{
     letter-spacing: 5px;
     font-weight: bolder;
     color: white;    
+    z-index: 10;
 }
 
 
@@ -37,21 +39,30 @@ body{
     
     flex:1;
     width: 100vw;
+    height: auto;
     display: flex;
     align-items: center ;
     justify-content: center;
+    
 }
 
 .Calculator{
-    padding: 35px;
+    padding: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 16px;
     background-color:white;
     width: 600px;
-    height: 60vh;
+    /* height: 60vh; */
+    min-height: fit-content;
+    max-height: 50vh;
+    
     box-shadow: 0 4px 6px  rgba(14, 82, 138, 0.403);
     display: flex;
     flex-direction: column;
     transition: transform 0.3s;
+    /* margin-top: 16px; */
+    /* margin-bottom: 20px; */
 
 }   
 
@@ -126,12 +137,6 @@ label{
     
 }
 
-/* .from_base,.Operation{
-
-
-
-    
-} */
 
 .Operation, .frombase{
     height: max-content;
@@ -205,7 +210,7 @@ button:active{
     
     display: flex;
     flex-direction: column;
-    /* gap:6px; */
+    
 }
 .output::after{
     content: "";
@@ -218,7 +223,7 @@ button:active{
 }
 .answer_area{
 
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -228,11 +233,13 @@ button:active{
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width:thin;
-    scrollbar-color: rgb(30, 100, 160) transparent; /* thumb and track */
-    height: 40px;
+    scrollbar-color: rgb(30, 100, 160) transparent;
+    height: 50px;
     color: black;
     letter-spacing: 2px;
-    
+    /* background-color: red; */
+    margin-bottom: 12px;
+
 }
 
 .footer {
@@ -241,12 +248,12 @@ button:active{
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-top: 2vh;
+  
   max-height:  fix-content;
   bottom: 0;             
   left: 0;   
-  min-height: 30px;
-  max-height: fit-content ;
+  /* min-height: 30px; */
+  min-height: fit-content;
   padding-left: 100px;
   width: 100vw;  
     background-color: rgb(14, 82, 138);
@@ -255,21 +262,31 @@ button:active{
 
 }
 
-.footer_box{
+
+.footer_box p{
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     color: whitesmoke;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 100%;
+    height: fit-content;
+    white-space: nowrap;
     width: 100%;
     font-weight: bolder;
-    
-    
-
 }
 
+
+ .footer_box{
+    white-space:nowrap;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+ }
 
 
 #home{
@@ -295,19 +312,613 @@ button:active{
     text-decoration: none;
 }
 
-@media (max-width: 405px) and (max-height: 405px) {
 
-    body{font-size: 12px;;
-        word-break: keep-all;
-    flex-wrap: nowrap;     
-        width: 100vw;
-        height: 100vh;
+#button_clicked_converter, #to_home{
+
+    background : none;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
 }
 
-    .container > div {
-          flex-shrink: 0;
-          flex-wrap: nowrap;        
-        width: 100vw;
+#button_clicked_converter:hover, #to_home:hover{
+    
+    color: rgb(69, 205, 255);
+}
+#button_clicked_converter:active, #to_home:active{
+    
+    color: rgb(2, 118, 159);
+    
 }
 
+
+/* @media (max-width: 800px) {
+    .Calculator,
+    input,
+    select,
+    button,
+    label,
+    .footer_box,
+    #home,
+    .answer_area,
+    .select_base {
+        all: unset;
+    }
+} */
+@media (max-width: 1000px) {
+
+    
+    .header{
+        max-height:80px ;
+        font-size: 35px;
+       
+
+    }
+    #header_title{
+        font-size: 30px;
+        
+    }
+    /* .header{
+     background-color: rgb(14, 82, 138);
+
+    height:100px;
+    width: 100vw;
+    padding-left: 100px;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+
+    white-space: none;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: white;    
+    z-index: 10;
+} */
+    
+    .Calculator{
+        
+        font-size: 20px;
+        height: auto;
+
+
+    }
+    /* .Calculator{
+    padding: 35px;
+    border-radius: 16px;
+    background-color:white;
+    width: 600px;
+    height: 60vh;
+    box-shadow: 0 4px 6px  rgba(14, 82, 138, 0.403);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+
+}    */
+    label{
+        font-size: 15px;
+    }
+
+    #answer_title{
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media (max-width: 720px) {
+    *{
+        padding: 0%;
+        
+        
+    }
+    body{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-y: auto;
+        min-height: 100vh;
+        overflow-x: hidden;
+
+    }
+    .header{
+        flex-wrap: nowrap;
+        font-size: 35px;
+        min-height: 85px;
+        min-width: 100vw;
+        padding-left: 0%;
+        
+    }
+
+    #header_title{
+        margin-left: 40px;
+    }
+    .container{
+        
+        width: 100vw;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        
+
+    }
+
+    .Calculator{
+        
+        height: auto;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        padding: 10px;
+        margin: 30px;
+
+    }
+    .input_takers{
+        
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        /* justify-content: center; */
+        padding: 40px;
+        gap: 50px;
+    }
+
+
+    .number_input{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center;         */
+        gap: 20px;
+    }
+    label{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    input{
+        width: 90%;
+        
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .select_base{
+        /* background-color: red; */
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: max-content;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        
+    }
+    select{
+        
+        min-width: fit-content;
+        min-height: fit-content;
+        display: flex;
+        align-items: center; 
+        justify-content: center;       
+    } 
+    button{
+        width: 60%;
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .output{
+        gap: 36px;
+        font-size: 25px;
+        width: 90%;
+        
+    }
+
+    .answer_area{
+        
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #answer_title{
+        font-size: 18px;
+        
+        text-align: center;
+    }
+
+
+    .Calculator:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0px 16px  rgb(134, 217, 255);    
+}    
+
+/* .footer{
+    margin-bottom: 0%;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+} */
+
+
+   .footer{    
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  
+  max-height:  fix-content;
+  bottom: 0;             
+  left: 0;   
+
+  /* min-height: 30px; */
+  
+  padding-left: 0%;
+  width: 100vw;  
+    background-color: rgb(14, 82, 138);
+    }
+
+ .footer_box p{
+    /* background-color: red; */
+    font-size: 16px;
+    white-space: nowrap;
+
+    width: 100%;
+    font-size: 14px;
+    
+ }
+
+
+ 
+ .footer_box{
+    white-space:nowrap;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding: 0%;
+    margin-right:0%;
+    margin-left:20px;
+ }
+
+
+ #button_clicked_converter{
+    padding: 0;
+    font-size: 14px;
+    
+    
+ }
+ #to_home{
+    font-size: 14px;
+    /* background-color: red; */
+    display: flex;
+    
+    justify-content: center;    
+    align-items: center;
+    padding: 0%;
+    margin-right: 20px;
+
+ }
+
+ #home{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 0%;
+ }
+
+} 
+
+
+
+
+@media (max-width: 480px) {
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
+    body{
+        /* background-color:yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-y: auto;
+        min-height: 100vh;
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+
+    }
+    .header{
+        
+        min-height: 60px;
+        width: 100%;
+        text-align: center;
+        
+        padding-left: 0px;
+
+        
+    }
+
+    #header_title{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .container{
+        
+        
+        width: 100vw;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /* padding: 10px 0px; */
+
+    }
+
+    .Calculator{
+        
+        max-width: 66vw;
+
+        height: auto;
+        min-height: 50vh;
+        max-height: fit-content;
+        /* padding: 20px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    .input_takers{
+        /* background-color: chartreuse; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;        
+        
+        gap: 25px;
+    
+    }
+
+
+    .number_input{
+        /* background-color: aqua; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+        gap: 15px;
+    }
+    label{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        font-size: 10px;
+    }
+    input{
+        width: 90%;
+        /* background-color: blueviolet;35px */
+        height: 35px ;
+        /* padding: 10px; */
+        padding: 0;
+        border-radius: 10px;
+        font-size: 10px;
+        text-align: start;
+        padding-left: 10px;
+    }
+
+    .select_base{
+        /* background-color: brown; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        gap: 10px;
+
+        
+    }
+
+    select{
+        width: 90%;
+        min-height: fit-content;
+        max-height: 30px;
+        border-radius: 8px;
+        font-size: 10px;
+        text-align: start;        
+    }
+    button{
+        width: 80%;
+        /* padding: 6%; */
+        padding: 6%;
+        height: 40px;
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 25px;
+
+    }
+
+    .output{
+        gap:20px;
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+        word-wrap: break-word;
+        
+    }
+
+    .answer_area{
+        /* background-color: aliceblue; */
+        height: auto;
+        width: 100%;
+        font-size: 12px;
+        overflow-x: auto;
+    }
+
+
+    .Calculator:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0px 16px  rgb(134, 217, 255);    
+}    
+
+    .footer{
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    padding-left: 0;
+    justify-content: center;
+    text-align: center;
+
+        
+}
+ .footer_box p{
+    font-size: 10px;
+    white-space:nowrap;
+    text-align: center;
+    margin-left: 15px;
+
+    
+
+ }
+
+
+ .footer_box{
+    white-space:nowrap;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+ }
+#to_home, #home,#button_clicked_converter{
+    padding: 0;
+    font-size: 10px;
+    
+}
+
+
+#home{
+    margin-right: 20px;
+}
+ 
+#answer_title{
+    font-size: 10px;
+}
+
+
+
+}
+
+@media (max-width:350px){
+     .footer_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:7px;
+        margin-top: 10px;
+ }
+
+}
+
+
+@media (max-width: 278px) {
+
+    #header_title{
+        font-size: 12px;
+        word-spacing: normal;
+        letter-spacing: 2px;
+        margin: 0%;
+        text-align: center;
+        width: 100%;
+    }
+    .header{
+        min-height: 40px;
+        padding: 0%;
+        
+        
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_box{
+        
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #to_home, #home,#button_clicked_converter{
+        padding: 0;
+        font-size: 10px;
+        text-wrap: wrap;
+        word-break: break-all;
+        white-space: wrap;
+
+    }
+
+
+    #home{
+        margin-right: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+        
+    }
+    
+    #answer_title{
+        font-size: 10px;
+    }
+
+ button{
+    font-size:10px;
+ }
+ .answer_area{
+    font-size: 10px;
+ }
+ label, .select_base, .frombase, .Operation, #header_title, p{
+    font-size: 10px;
+    text-wrap: wrap;
+    word-break: break-all;
+    white-space: wrap;
+ }
+
+
+    
 }
