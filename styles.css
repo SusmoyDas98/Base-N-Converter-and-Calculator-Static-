@@ -447,7 +447,7 @@ button:active{
         min-height: 85px;
         min-width: 100vw;
         padding-left: 0%;
-        font-size: 30px;
+        font-size: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -692,6 +692,7 @@ button:active{
         min-height: 60px;
         min-width: 100vw;
         padding-left: 0%;
+        font-size:12px;
         
     }
 
