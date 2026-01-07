@@ -689,13 +689,11 @@ button:active{
     }
     .header{
         flex-wrap: nowrap;
-        min-height: 60px;
-        min-width: 100vw;
+        min-height:fit-content;
         padding-left: 0%;
-        font-size:12px;
+        font-size:25px;
         
     }
-
     #header_title{
         margin-left: 20px;
         font-size: 20px;
