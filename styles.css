@@ -212,6 +212,7 @@ button:active{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(14, 82, 138);
     letter-spacing: 2px;
+    height:fit-content;
 }
 .answer_title{
     font-size: 20px;
@@ -757,7 +758,7 @@ button:active{
     }
     label{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-        font-size: 10px;
+        font-size: 14px;
     }
     input{
         width: 90%;
@@ -882,7 +883,7 @@ button:active{
 }
  
 .answer_title{
-    font-size: 10px;
+    font-size: 14px;
     font-weight:bold;
     
 }
