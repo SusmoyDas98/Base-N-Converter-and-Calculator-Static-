@@ -213,7 +213,7 @@ button:active{
     color: rgb(14, 82, 138);
     letter-spacing: 2px;
 }
-#answer_title{
+.answer_title{
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -412,9 +412,10 @@ button:active{
         font-size: 18px;
     }
 
-    #answer_title{
+    .answer_title{
         margin-bottom: 12px;
         font-size: 18px;
+        font-weight: bold;
     }
 
     .answer_area{
@@ -579,10 +580,11 @@ button:active{
         font-size: 20px;
         margin-bottom: 15px;
     }
-    #answer_title{
+    .answer_title{
         font-size: 18px;
         
         text-align: center;
+        font-weight:bold;
     }
 
 
@@ -877,8 +879,9 @@ button:active{
     margin-right: 20px;
 }
  
-#answer_title{
+.answer_title{
     font-size: 10px;
+    font-weight:bold;
     
 }
 
@@ -943,8 +946,9 @@ button:active{
         
     }
     
-    #answer_title{
+    .answer_title{
         font-size: 5px;
+        font-weight:bold;
     }
 
  button{
