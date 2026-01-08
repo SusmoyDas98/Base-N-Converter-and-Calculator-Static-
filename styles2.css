@@ -405,7 +405,7 @@ button:active{
         font-size: 15px;
     }
 
-    #answer_title{
+    .answer_title{
         margin-bottom: 10px;
     }
 
@@ -545,7 +545,7 @@ button:active{
         font-size: 20px;
         margin-bottom: 15px;
     }
-    #answer_title{
+    .answer_title{
         font-size: 18px;
         
         text-align: center;
@@ -832,7 +832,7 @@ button:active{
     margin-right: 20px;
 }
  
-#answer_title{
+.answer_title{
     font-size: 10px;
 }
 
@@ -903,7 +903,7 @@ button:active{
         
     }
     
-    #answer_title{
+    .answer_title{
         font-size: 10px;
     }
 
