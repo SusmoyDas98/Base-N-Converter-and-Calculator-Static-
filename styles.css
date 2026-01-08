@@ -831,7 +831,7 @@ button:active{
         /* background-color: aliceblue; */
         height: auto;
         width: 100%;
-        font-size: 12px;
+        font-size: 15px;
         overflow-x: auto;
         font-weight:bold;
     }
