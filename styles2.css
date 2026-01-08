@@ -426,10 +426,9 @@ button:active{
         overflow-y: auto;
         min-height: 100vh;
         overflow-x: hidden;
-    }
 
-    
-   }
+    }
+       
     .header{
         flex-wrap: nowrap;
         min-width: 100vw;
@@ -451,8 +450,11 @@ button:active{
         flex-direction: column;
         align-items: center;
         padding: 0px;
+        
+        
 
     }
+
 
     .Calculator{
         
