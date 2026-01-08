@@ -828,6 +828,7 @@ button:active{
         width: 100%;
         font-size: 12px;
         overflow-x: auto;
+        font-weight:bold;
     }
 
 
@@ -878,7 +879,7 @@ button:active{
  
 #answer_title{
     font-size: 10px;
-    font-weight:bold;
+    
 }
 
 
