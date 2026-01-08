@@ -416,6 +416,8 @@ button:active{
         margin-bottom: 12px;
         font-size: 18px;
         font-weight: bold;
+        display:flex;
+        flex-direction:column;
     }
 
     .answer_area{
