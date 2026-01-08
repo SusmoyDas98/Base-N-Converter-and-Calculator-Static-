@@ -724,7 +724,7 @@ button:active{
     }
     label{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-        font-size: 14px;
+        font-size: 12px;
     }
     input{
         width: 90%;
@@ -782,7 +782,7 @@ button:active{
         /* background-color: aliceblue; */
         height: auto;
         width: 100%;
-        font-size: 12px;
+        font-size: 15px;
         overflow-x: auto;
     }
 
@@ -834,7 +834,7 @@ button:active{
 }
  
 .answer_title{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
