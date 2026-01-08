@@ -426,29 +426,31 @@ button:active{
         overflow-y: auto;
         min-height: 100vh;
         overflow-x: hidden;
-
     }
+
+    
+   }
     .header{
         flex-wrap: nowrap;
-        font-size: 35px;
-        min-height: 85px;
         min-width: 100vw;
-        padding-left: 0%;
-        
+        min-height:55px;
+        padding: 0%;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: serif;
     }
 
-    #header_title{
-        margin-left: 40px;
-    }
+
     .container{
         
         width: 100vw;
-        min-height: auto;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0px;
-        
 
     }
 
