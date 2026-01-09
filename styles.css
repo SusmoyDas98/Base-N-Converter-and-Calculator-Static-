@@ -14,17 +14,18 @@ body{
     background-color: white;
 }
 
+
 .header{
      background-color: rgb(14, 82, 138);
 
-    height:100px;
+    height:80px;
     width: 100vw;
     padding-left: 100px;
     display: flex;
     align-items: center ;
     justify-content: flex-start;
     font-family: "Garamond";
-    font-size: 45px;
+    font-size: 35px;
 
     white-space: none;
     letter-spacing: 5px;
@@ -279,8 +280,8 @@ button:active{
   max-height:  fix-content;
   bottom: 0;             
   left: 0;   
-  /* min-height: 30px; */
-  min-height: fit-content;
+  min-height: 30px;
+  /* min-height: fit-content; */
   padding-left: 100px;
   width: 100vw;  
     background-color: rgb(14, 82, 138);
@@ -293,7 +294,7 @@ button:active{
 .footer_box p{
     
     font-family: "Garamond";
-    font-size: 15px;
+    font-size: 18px;
     color: whitesmoke;
     display: flex;
     justify-content: flex-start;
