@@ -194,16 +194,20 @@ body{
     all:unset;
     padding: 20px;
     background-color:white;
-    width:80%;
+    width:85%;
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.229);    
+    border-radius:10px;
 }
 
 
 .heading{
    
-    font-size: 80%;
-     transform: scaleY(1.5);
+    font-size: 85%;
+     transform: scaleY(1.25);
     
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    
+    overflow-wrap:break-word;
 }
 
 .buttons{
@@ -227,7 +231,7 @@ button{
 
 }
 
-@media (max-width: 280px) {
+@media (max-width: 345px) {
 
 
 body{
