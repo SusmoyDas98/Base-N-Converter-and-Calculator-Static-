@@ -179,6 +179,7 @@ button{
 
 }
 
+
 @media (max-width: 480px) {
 
 
@@ -188,16 +189,19 @@ body{
 
 }
 
-.container{    
+.container{  
+    all:unset;
     padding: 20px;
-
-    
+    background-color:white;
+    width:80%;
 }
 
 
 .heading{
    
-    font-size: 10px;
+    font-size: 80%;
+     transform: scaleY(1.5);
+    
     letter-spacing: 2px;
 }
 
@@ -209,12 +213,12 @@ body{
 }
 button{
     
-    font-size:8px;
+    font-size:85%;
     max-height:fit-content;
     max-width: max-content;
-    padding: 12px;
+    
     letter-spacing: normal;
-
+    width: 100%;
     
 }
 
