@@ -432,18 +432,18 @@ button:active{
 
     }
        
-    .header{
+   
+  .header{
         flex-wrap: nowrap;
+        height: 55px; 
         min-width: 100vw;
-        min-height:55px;
-        padding: 0%;
-        font-size: 20px;
+        padding-left: 0%;
+        font-size: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: serif;
     }
-
 
     .container{
         
