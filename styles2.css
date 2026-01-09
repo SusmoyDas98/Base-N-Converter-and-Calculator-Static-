@@ -101,8 +101,9 @@ body{
 }
 
 ::placeholder{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    font-family:monospace;
+    font-weight:bold;
+    letter-spacing:2px;    
 }
 input{
     font-family:monospace;
