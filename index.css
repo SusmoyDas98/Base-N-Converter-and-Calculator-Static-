@@ -202,7 +202,7 @@ body{
 
 .heading{
    
-    font-size: 85%;
+    font-size: 95%;
      transform: scaleY(1.25);
     
     letter-spacing: 3px;
@@ -218,7 +218,7 @@ body{
 }
 button{
     
-    font-size:85%;
+    
     max-height:fit-content;
     max-width: max-content;
     
@@ -231,7 +231,7 @@ button{
 
 }
 
-@media (max-width: 345px) {
+@media (max-width: 365px) {
 
 
 body{
