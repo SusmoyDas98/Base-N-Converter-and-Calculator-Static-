@@ -236,7 +236,7 @@ function conversion(num, from_base, to_base, operation = false, functionality_ch
     
     }
     else{
-        return answer;
+        return sign? sign+answer : answer;
     }
 }
 
