@@ -190,6 +190,11 @@ body{
 
 }
 
+@keyframes fadeIn{
+    from{opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}    
+
 .container{  
     all:unset;
     padding: 20px;
@@ -197,8 +202,11 @@ body{
     width:85%;
     box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.229);    
     border-radius:10px;
+    animation: fadeIn 2s ease forwards;
 }
 
+
+    
 
 .heading{
    
