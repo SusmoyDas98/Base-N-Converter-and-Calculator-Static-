@@ -1,4 +1,3 @@
-
 function base_n_to_decimal(num, from_base) {
     let number = num.toString();
     const digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
