@@ -187,6 +187,7 @@ button{
     letter-spacing: 2px;
 
     z-index: 10;
+    
 }
 
 .buttons{
@@ -431,6 +432,7 @@ button:active{
 
 }
 
+
 @media (max-width: 720px) {
     *{
         padding: 0%;
@@ -442,14 +444,15 @@ button:active{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         overflow-y: auto;
         min-height: 100vh;
-        max-height: auto;
         overflow-x: hidden;
 
     }
-    .header{
+       
+   
+  .header{
         flex-wrap: nowrap;
         height: 55px; 
         min-width: 100vw;
@@ -461,36 +464,29 @@ button:active{
         font-family: serif;
     }
 
-    #header_title{
-        margin-left: 40px;
-    }
-
     .container{
         
-        width: 100vw;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0px;
         
-        
-
+    
     }
+
 
     .converter{
         
         height: auto;
-        width: 70vw;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
         /* justify-content: center; */
         padding: 10px;
-        padding-bottom: 40px;
         margin: 30px;
-        gap:0px;
-        
 
     }
     .input_takers{
@@ -500,9 +496,7 @@ button:active{
         align-items:center;
         /* justify-content: center; */
         padding: 40px;
-        padding-bottom: 35px;
-        gap: 20px ;
-        
+        gap: 50px;
     }
 
 
@@ -516,7 +510,7 @@ button:active{
     }
     label{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-        font-size: 18px;
+        font-size: 20px;
         letter-spacing: 2px;
     }
     input{
@@ -531,7 +525,7 @@ button:active{
         /* background-color: red; */
         max-width: 90%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         width: max-content;
@@ -539,12 +533,6 @@ button:active{
         gap: 20px;
         
         
-    }
-
-
-    .from_base, .to_base{
-        display: flex;
-        flex-direction: column;
     }
     select{
         
@@ -554,27 +542,19 @@ button:active{
         align-items: center; 
         justify-content: center;       
     } 
-    button.convert_button{ 
-        min-width: 100%;
-        padding: 10px;
+    button{
+        width: 60%;
+        padding: 8%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
-        
-    }
-
-    .buttons{
-        /* background-color: red; */
-        margin-bottom: 0%;
     }
 
     .output{
         gap: 36px;
         font-size: 25px;
         width: 90%;
-        /* background-color: red; */
         
     }
 
@@ -589,7 +569,6 @@ button:active{
         font-size: 18px;
         
         text-align: center;
-        font-weight:bold;
     }
 
 
@@ -604,6 +583,7 @@ button:active{
     margin-top: auto;
     width: 100%;
 } */
+
 
    .footer{    
   position: relative;
@@ -647,6 +627,7 @@ button:active{
     margin-left:20px;
  }
 
+
  #button_clicked_calculator{
     padding: 0;
     font-size: 14px;
@@ -673,11 +654,36 @@ button:active{
      margin-right:20px;
  }
 
-
 } 
 
 
 
+/* #convert_button{
+    width:100%;
+    padding:13px;
+} */
+
+button{
+    height:50px;
+    width: 200px;
+    
+    
+    background-color: rgb(0, 164, 223);
+    
+    border: none;
+    
+    border-radius: 50px;
+    color: whitesmoke;
+
+    font-weight: bolder;
+    font-family:'Courier New', Courier, monospace;
+    
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    z-index: 10;
+    
+}
 
 @media (max-width: 480px) {
     *{
@@ -811,6 +817,7 @@ button:active{
     .output{
         /* background-color: red; */
         gap:20px;
+        
         font-size: 18px;
         width: 90%;
         text-align: center;
@@ -958,6 +965,7 @@ button:active{
 
  button{
     font-size: 6px;
+     
  }
  .answer_area{
     font-size: 8px;
